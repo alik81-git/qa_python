@@ -2,6 +2,8 @@ from main import BooksCollector
 
 # класс TestBooksCollector объединяет набор тестов, которыми мы покрываем наше приложение BooksCollector
 # обязательно указывать префикс Test
+long_name = 'Очень длинное название книги, которое превышает 40 символов'
+
 class TestBooksCollector:
 
     def test_add_new_book_success(self):
@@ -20,8 +22,8 @@ class TestBooksCollector:
 
     def test_add_new_book_long_name(self):
         collector = BooksCollector()
-        collector.add_new_book('Очень длинное название книги, которое превышает 40 символов')
-        assert 'Очень длинное название книги, которое превышает 40 символов' not in collector.books_genre
+        collector.add_new_book(long_name)
+        assert long_name not in collector.books_genre
 
     def test_set_book_genre_success(self):
         collector = BooksCollector()
@@ -73,3 +75,26 @@ class TestBooksCollector:
         collector.add_new_book('1984')
         collector.add_book_in_favorites('1984')
         assert collector.get_list_of_favorites_books() == ['Гордость и предубеждение', '1984']   
+
+    def test_get_book_genre_existing_book(self):
+        collector = BooksCollector()
+        collector.add_new_book("Маска")
+        collector.set_book_genre("Маска", "Комедии")
+        assert collector.get_book_genre("Маска") == "Комедии"
+
+    def test_get_book_genre_nonexistent_book(self):
+        collector = BooksCollector()
+        assert collector.get_book_genre("Неизвестная книга") is None
+
+    def test_get_books_genre_with_books(self):
+        collector = BooksCollector()
+        collector.add_new_book("Книга1")
+        collector.add_new_book("Книга2")
+        collector.set_book_genre("Книга1", "Фантастика")
+        collector.set_book_genre("Книга2", "Ужасы")
+        expected = {"Книга1": "Фантастика", "Книга2": "Ужасы"}
+        assert collector.get_books_genre() == expected
+
+    def test_get_books_genre_empty(self):
+        collector = BooksCollector()
+        assert collector.get_books_genre() == {}
