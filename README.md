@@ -1,1 +1,31 @@
 # qa_python
+ 
+ #   a d d e d   t e s t 1 :   t e s t _ a d d _ n e w _ b o o k _ s u c c e s s 
+ 
+ #   a d d e d   t e s t 2 :   t e s t _ a d d _ n e w _ b o o k _ a l r e a d y _ e x i s t s 
+ 
+ #   a d d e d   t e s t 3 :   t e s t _ a d d _ n e w _ b o o k _ l o n g _ n a m e 
+ 
+ #   a d d e d   t e s t 4 :   t e s t _ s e t _ b o o k _ g e n r e _ s u c c e s s 
+ 
+ #   a d d e d   t e s t 5 :   t e s t _ s e t _ b o o k _ g e n r e _ i n v a l i d _ g e n r e 
+ 
+ #   a d d e d   t e s t 6 :   t e s t _ g e t _ b o o k s _ w i t h _ s p e c i f i c _ g e n r e 
+ 
+ #   a d d e d   t e s t 7 :   t e s t _ g e t _ b o o k s _ f o r _ c h i l d r e n 
+ 
+ #   a d d e d   t e s t 8 :   t e s t _ a d d _ b o o k _ i n _ f a v o r i t e s _ s u c c e s s 
+ 
+ #   a d d e d   t e s t 9 :   t e s t _ d e l e t e _ b o o k _ f r o m _ f a v o r i t e s _ s u c c e s s 
+ 
+ #   a d d e d   t e s t 1 0 :   t e s t _ g e t _ l i s t _ o f _ f a v o r i t e s _ b o o k s 
+ 
+ #   a d d e n   l o n g _ n a m e   v a r i a b l e 
+ 
+ #   a d d e d   t e s t 1 1 :   t e s t _ g e t _ b o o k _ g e n r e _ e x i s t i n g _ b o o k 
+ 
+ #   a d d e d   t e s t 1 2 :   t e s t _ g e t _ b o o k _ g e n r e _ n o n e x i s t e n t _ b o o k 
+ 
+ #   a d d e d   t e s t 1 3 :   t e s t _ g e t _ b o o k s _ g e n r e _ w i t h _ b o o k s 
+ 
+ #   a d d e d   t e s t 1 4 :   t e s t _ g e t _ b o o k s _ g e n r e _ e m p t y 
